@@ -6,11 +6,8 @@ ion-content{
 .first-row{
   box-shadow: 5px 5px 45px 14px rgba(0,0,0,0.39);
   background-color: white !important;
-
-}
-
-.left{
-  text-align: left;
+  padding-bottom: 10px;
+  height: auto;
 }
 
 .right{
@@ -29,26 +26,28 @@ ion-content{
 .boxes{
   background-color: rgb(230, 230, 230);
   margin: 5px 15px;
-  height: 100%;
+  padding: 10px;
+  padding-bottom: 10%;
 }
 
 .boxes-row{
   justify-content: space-between;
-  height: 100%;
 }
+// Second Row
 
 .second-row{
-  height: 53.6;
-  text-align: center;
+  justify-content: space-around;
+  height: 53.6vh;
 }
 
 .second-first{
-  border: 1px solid black;
-  border-radius: 5px;
+  box-shadow: 5px 5px 45px 14px rgba(0,0,0,0.39);
+  background-color: white !important;
+  height: 100%;
 }
 
 .second-second{
-  border: 1px solid black;
-  border-radius: 5px;
+  box-shadow: 5px 5px 45px 14px rgba(0,0,0,0.39);
+  background-color: white !important;
 }
 
