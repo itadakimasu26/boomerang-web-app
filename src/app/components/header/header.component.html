@@ -1,0 +1,21 @@
+<ion-header class="back-color">
+  <ion-toolbar class="back-color ">
+    <ion-item lines="none" class="back-color">
+      <ion-icon name="menu-sharp" menuToggle></ion-icon>
+      <img style="max-height: 10vh;"
+        (click)="goToDashboard()"
+        class="logo"
+        src="../../../assets/boomerang-logo.png"
+      />
+    </ion-item>
+    <ion-item lines="none" slot="end" class="back-color">
+      <ion-chip class="back-color details">
+        <ion-avatar>
+          <img src="../../../assets/avatar.png" />
+        </ion-avatar>
+        <p (click)="goToAccount()" class="name">Michael John Ojoy</p>
+      </ion-chip>
+      <ion-icon name="notifications-sharp"></ion-icon>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>

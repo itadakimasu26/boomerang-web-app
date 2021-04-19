@@ -1,0 +1,8 @@
+<ion-grid>
+  <ion-row *ngFor="let p of pages">
+    <ion-item lines="none" class="ion-no-padding {{p?.class}}">
+      <ion-icon name="{{ p.icon }}"></ion-icon>
+      <ion-label> {{ p.class }}</ion-label>
+    </ion-item>
+  </ion-row>
+</ion-grid>

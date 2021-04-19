@@ -3,13 +3,36 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: '',
+    loadChildren: () => import('./pages/dashboard/dashboard.module').then(m => m.DashboardPageModule)
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: 'dashboard',
+    loadChildren: () => import('./pages/dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'orders',
+    loadChildren: () => import('./pages/orders/orders.module').then( m => m.OrdersPageModule)
+  },
+  {
+    path: 'ticket',
+    loadChildren: () => import('./pages/ticket/ticket.module').then( m => m.TicketPageModule)
+  },
+  {
+    path: 'finance',
+    loadChildren: () => import('./pages/finance/finance.module').then( m => m.FinancePageModule)
+  },
+  {
+    path: 'customer-list',
+    loadChildren: () => import('./pages/customer-list/customer-list.module').then( m => m.CustomerListPageModule)
+  },
+  {
+    path: 'order-tracking',
+    loadChildren: () => import('./pages/order-tracking/order-tracking.module').then( m => m.OrderTrackingPageModule)
+  },
+  {
+    path: 'account',
+    loadChildren: () => import('./pages/account/account.module').then( m => m.AccountPageModule)
   },
 ];
 
