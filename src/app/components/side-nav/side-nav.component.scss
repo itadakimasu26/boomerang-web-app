@@ -2,20 +2,20 @@ ion-grid{
   background-color: gray;
   justify-content: space-between;
   height: 90vh;
+  padding: 0 !important;
+  margin: 0  !important;
 }
 ion-item{
   --background: transparent;
-  text-align: center;
   height: 10vh;
+  width: 100%;
 }
 ion-row{
   cursor: pointer;
 }
 ion-icon{
-  margin: auto;
-  font-size: 2rem;
+  padding: 0 !important;
+  margin: 0 !important;
   color: white;
-}
-.arrow{
-  font-size: 0.5rem!important;
+  margin-left: auto !important;
 }
