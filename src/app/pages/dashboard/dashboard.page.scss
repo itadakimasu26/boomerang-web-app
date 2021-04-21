@@ -1,60 +1,59 @@
-ion-content{
-  margin: -10% !important;
-  padding: 0 !important;
-}
 
-.first-row{
-  box-shadow: 5px 5px 45px 14px rgba(0,0,0,0.39);
-  background-color: white !important;
-  padding-bottom: 10px;
-  height: 35vh!important;
-  height: auto;
-}
+// .first-row{
+//   box-shadow: 5px 5px 45px 14px rgba(0,0,0,0.39);
+//   background-color: white !important;
+//   padding-bottom: 10px;
+//   height: 35vh!important;
+//   height: auto;
+// }
 
-.right{
-  text-align: right!important;
-}
+// .right{
+//   text-align: right!important;
+// }
 
-.center{
-  // font-size: xx-large;
-  font-weight: bold;
-}
+// .center{
+//   // font-size: xx-large;
+//   font-weight: bold;
+// }
 
-.input{
-  height: 4vh;
-  border: 1px solid rgb(223, 214, 214);
-  border-radius: 2px;
-}
+// .input{
+//   height: 4vh;
+//   border: 1px solid rgb(223, 214, 214);
+//   border-radius: 2px;
+// }
 
-.boxes{
-  background-color: rgb(230, 230, 230);
-  margin: 5px 15px;
-  text-align: left!important;
-  padding: 10px;
-  padding-bottom: 10%;
-  height: 20vh!important;
-}
+// .boxes{
+//   background-color: rgb(230, 230, 230);
+//   margin: 5px 15px;
+//   text-align: left!important;
+//   padding: 10px;
+//   padding-bottom: 10%;
+//   height: 20vh!important;
+// }
 
-.boxes-row{
-  justify-content: space-between;
-}
-// Second Row
+// .boxes-row{
+//   justify-content: space-between;
+// }
+// // Second Row
 
-.second-row{
-  margin: 1.3% 1.3%;
-  margin-top: -0.7%;
-  justify-content: space-around;
-  height: 50vh;
-}
+// .second-row{
+//   margin: 1.3% 1.3%;
+//   margin-top: -0.7%;
+//   justify-content: space-around;
+//   height: 50vh;
+// }
 
-.second-first{
-  box-shadow: 5px 5px 45px 14px rgba(0,0,0,0.39);
-  background-color: white !important;
-  height: 100%;
-}
+// .second-first{
+//   box-shadow: 5px 5px 45px 14px rgba(0,0,0,0.39);
+//   background-color: white !important;
+//   height: 100%;
+// }
 
-.second-second{
-  box-shadow: 5px 5px 45px 14px rgba(0,0,0,0.39);
-  background-color: white !important;
-}
+// .second-second{
+//   box-shadow: 5px 5px 45px 14px rgba(0,0,0,0.39);
+//   background-color: white !important;
+// }
 
+#content{
+  background-color: red;
+}

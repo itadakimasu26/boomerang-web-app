@@ -1,76 +1,9 @@
-<ion-content fullscreen="true">
+<ion-content>
   <app-header></app-header>
-  <ion-grid class="ion-no-margin ion-no-padding">
+  <ion-grid>
     <ion-row>
-      <app-side-nav></app-side-nav>
       <ion-col>
-        <ion-row class="first-row ion-margin ion-padding-top">
-          <ion-col>
-            <ion-row>
-              <ion-col size="2">
-                <ion-item lines="none" style= "font-size: x-large">
-                    <b>Data Viewer</b>
-                </ion-item>
-              </ion-col>
-              <ion-col size="3">
-                <ion-item lines="none">
-                  <ion-label class="ion-margin">From</ion-label>
-                  <ion-input type="date" class="right input"></ion-input>
-                </ion-item>
-              </ion-col>
-              <ion-col size="3">
-                <ion-item lines="none">
-                  <ion-label class="ion-margin">To</ion-label>
-                  <ion-input type="date" class="right input"></ion-input>
-                </ion-item>
-              </ion-col>
-              <ion-col size="4">
-                <ion-item lines="none">
-                  <ion-label style= "font-size: x-large"  ><b>Bulk Orders</b></ion-label>
-                  <ion-select placeholder="Bulk Order ID" class="right">
-                    <ion-select-option>1</ion-select-option>
-                    <ion-select-option>2</ion-select-option>
-                    <ion-select-option>3</ion-select-option>
-                  </ion-select>
-                </ion-item>
-              </ion-col>
-            </ion-row>
-            <ion-row class="boxes-row mx-1">
-              <ion-col class="boxes">
-                <p style="text-align: left!important; font-size: medium">Parcel</p>
-                <p class="center">0,000</p>
-              </ion-col>
-              <ion-col class="boxes">
-                <b>
-                  <p>RTS</p>
-                </b>
-                <ion-label class="center">0,000</ion-label>
-              </ion-col>
-              <ion-col class="boxes">
-                <b>
-                  <p>Total Sales</p>
-                </b>
-                <ion-label class="center">0,000</ion-label>
-              </ion-col>
-              <ion-col class="boxes">
-                <b>
-                  <p>Total COD Fee</p>
-                </b>
-                <ion-label class="center">0,000</ion-label>
-              </ion-col>
-              <ion-col class="boxes">
-                <b>
-                  <p>Total Shipment Fee</p>
-                </b>
-                <ion-label class="center">0,000</ion-label>
-              </ion-col>
-            </ion-row>
-          </ion-col>
-        </ion-row>
-        <ion-row class="second-row mx-1">
-          <ion-col size="5" class="second-first"> 1 </ion-col>
-          <ion-col class="second-second ion-margin-start"> 2 </ion-col>
-        </ion-row>
+        <app-side-nav></app-side-nav>
       </ion-col>
     </ion-row>
   </ion-grid>

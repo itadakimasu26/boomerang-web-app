@@ -1,21 +1,25 @@
-ion-grid{
+ion-menu{
+  --background: gray;
+  width: 15%;
+  height: 100vh;
+}
+
+ion-list{
   background-color: gray;
-  justify-content: space-between;
-  height: 90vh;
-  padding: 0 !important;
-  margin: 0  !important;
 }
+
 ion-item{
-  --background: transparent;
-  height: 10vh;
-  width: 100%;
+  --background: gray;
 }
-ion-row{
-  cursor: pointer;
+
+.active-page{
+  --background: black!important;
 }
+
 ion-icon{
-  padding: 0 !important;
-  margin: 0 !important;
   color: white;
-  margin-left: auto !important;
+}
+
+.white{
+  color: white;
 }
