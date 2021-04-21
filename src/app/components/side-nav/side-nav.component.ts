@@ -5,15 +5,18 @@ import { MenuController } from '@ionic/angular';
 @Component({
   selector: 'app-side-nav',
   template: `
-  <ion-menu side="start" type="push" menuId="menu" contentId="menu-content">
-    <ion-list *ngFor="let p of pages">
-        <ion-item routerLink={{p.url}} *ngIf="p?.class != 'arrow'" lines="none" [class.active-page]="selectedPath === p.url">
+    <ion-menu [class.expanded]="isExpanded == true" side="start" type="push" menuId="menu" contentId="menu-content">
+      <ion-list *ngFor="let p of pages">
+        <ion-item
+          routerLink="{{ p.url }}"
+          *ngIf="p?.class != 'arrow'"
+          lines="none"
+          [class.active-page]="selectedPath === p.url"
+        >
           <ion-icon name="{{ p.icon }}"></ion-icon>
-          <ion-label class="white ion-margin" *ngIf="isExpanded == true">{{
-            p.name
-          }}</ion-label>
+          <ion-label *ngIf="isExpanded == true" class="white ion-margin" >{{ p.name }}</ion-label>
         </ion-item>
-        <ion-item *ngIf="p?.class == 'arrow'" lines="none">
+        <ion-item *ngIf="p?.class === 'arrow'" lines="none">
           <ion-icon
             (click)="isExpanded = !isExpanded"
             *ngIf="p?.class == 'arrow' && isExpanded == false"
@@ -25,17 +28,17 @@ import { MenuController } from '@ionic/angular';
             name="{{ p?.icon2 }}"
           ></ion-icon>
         </ion-item>
-    </ion-list>
-  </ion-menu>
-  <ion-router-outlet id="menu-content"></ion-router-outlet>
+      </ion-list>
+    </ion-menu>
+    <ion-router-outlet id="menu-content"></ion-router-outlet>
   `,
   styleUrls: ['./side-nav.component.scss'],
 })
 export class SideNavComponent implements OnInit {
-
   isExpanded = false;
   pages = [];
   selectedPath = '';
+  subs: any;
 
   constructor(public router: Router, public menuCtrl: MenuController) {
     this.pages = [
@@ -82,26 +85,21 @@ export class SideNavComponent implements OnInit {
         isActive: false,
       },
       {
-        icon: '',
-      },
-      {
         icon: 'caret-forward',
         icon2: 'caret-back',
         class: 'arrow',
       },
     ];
 
-    this.router.events.subscribe((event: RouterEvent) => {
+    this.subs = this.router.events.subscribe((event: RouterEvent) => {
       this.selectedPath = event.url;
+      console.log(this.selectedPath);
     });
-
   }
 
   ngOnInit() {
     this.menuCtrl.open();
   }
 
-  ionViewDidClose() {
-    this.menuCtrl.open();
-  }
+  ngOnDestroyInit() {}
 }

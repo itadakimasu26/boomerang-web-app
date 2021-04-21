@@ -1,7 +1,10 @@
 ion-menu{
   --background: gray;
-  width: 15%;
+  transition: 0.5s;
+  width: 4.3%;
   height: 100vh;
+  margin-left: -0.5%;
+  margin-top: -0.5%;
 }
 
 ion-list{
@@ -14,6 +17,11 @@ ion-item{
 
 .active-page{
   --background: black!important;
+}
+
+.expanded{
+  width: 15%;
+  transition: 0.5s;
 }
 
 ion-icon{
