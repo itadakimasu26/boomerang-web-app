@@ -5,7 +5,7 @@ import { MenuController } from '@ionic/angular';
 @Component({
   selector: 'app-side-nav',
   template: `
-    <ion-menu [class.expanded]="isExpanded == true" side="start" type="push" menuId="menu" contentId="menu-content">
+    <ion-menu [class.expanded]="isExpanded == true" side="start" type="push" menuId="menu" contentId="menu-content" swipeGesture="false">
       <ion-list *ngFor="let p of pages">
         <ion-item
           routerLink="{{ p.url }}"
@@ -14,7 +14,7 @@ import { MenuController } from '@ionic/angular';
           [class.active-page]="selectedPath === p.url"
         >
           <ion-icon name="{{ p.icon }}"></ion-icon>
-          <ion-label *ngIf="isExpanded == true" class="white ion-margin" >{{ p.name }}</ion-label>
+          <ion-label *ngIf="isExpanded == true" class="white" >{{ p.name }}</ion-label>
         </ion-item>
         <ion-item *ngIf="p?.class === 'arrow'" lines="none">
           <ion-icon
@@ -92,7 +92,7 @@ export class SideNavComponent implements OnInit {
       },
     ];
 
-    this.subs = this.router.events.subscribe((event: RouterEvent) => {
+  this.router.events.subscribe((event: RouterEvent) => {
       this.selectedPath = event.url;
       console.log(this.selectedPath);
     });

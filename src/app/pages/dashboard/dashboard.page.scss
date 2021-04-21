@@ -54,7 +54,60 @@
 //   background-color: white !important;
 // }
 
+ion-grid ion-row{
+  display: flex;
+}
+
 #content{
-  background-color: red;
   height: 100vh;
+
+}
+
+#menu{
+  width: 20%;
+}
+
+#wan{
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid rgb(230, 230, 230);
+  margin: 0px 5px 0px 5px;
+  padding: 0px 5px 0px 5px;
+}
+#tu{
+  height: 385px;
+  --background: transparent!important;
+  margin: 0px 5px 0px 5px;
+}
+
+.transpa{
+  --background: transparent;
+}
+
+.white{
+  background-color: white!important;
+}
+
+.boxes{
+  background-color: rgb(230, 230, 230);
+  margin: 5px 15px;
+  padding: 10px;
+  padding-bottom: 10%;
+}
+
+ion-input, ion-select{
+  border: 1px solid rgb(223, 214, 214);
+  border-radius: 2px;
+}
+
+.second-first{
+  border-radius: 5px;
+  margin: 5px 5px;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.second-second{
+  border-radius: 5px;
+  margin: 5px 5px;
+  border: 1px solid rgb(230, 230, 230);
 }
