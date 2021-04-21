@@ -1,14 +1,14 @@
 ion-menu{
   --background: gray;
   transition: 0.5s;
-  width: 4.3%;
+  --width: 50px;
+  max-width: 200px;
   height: 100vh;
-  margin-left: -0.5%;
-  margin-top: -0.5%;
 }
 
 ion-list{
   background-color: gray;
+  margin-top: 1%;
 }
 
 ion-item{
@@ -20,7 +20,7 @@ ion-item{
 }
 
 .expanded{
-  width: 15%;
+  --width: 200px;
   transition: 0.5s;
 }
 

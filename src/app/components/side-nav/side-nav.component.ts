@@ -84,6 +84,7 @@ export class SideNavComponent implements OnInit {
         icon: 'person-sharp',
         isActive: false,
       },
+
       {
         icon: 'caret-forward',
         icon2: 'caret-back',

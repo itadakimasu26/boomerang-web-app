@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
     <ion-header class="back-color">
       <ion-toolbar class="back-color ">
         <ion-item lines="none" class="back-color" slot="start">
-          <ion-buttons>
+          <ion-buttons class="header-icons">
             <ion-menu-button content-id="menu-content" menu="menu">
             </ion-menu-button>
           </ion-buttons>
