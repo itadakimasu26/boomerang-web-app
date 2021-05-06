@@ -23,7 +23,7 @@ import { Router } from '@angular/router';
             <ion-avatar>
               <img src="../../../assets/avatar.png" />
             </ion-avatar>
-            <p (click)="goToAccount()" class="name">Michael John Ojoy</p>
+            <p (click)="goToAccount()" class="name">Michael John Ojoys</p>
           </ion-chip>
           <ion-icon class="header-icons" name="notifications-sharp"></ion-icon>
         </ion-item>

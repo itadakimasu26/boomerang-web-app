@@ -38,7 +38,7 @@ export class SideNavComponent implements OnInit {
   isExpanded = false;
   pages = [];
   selectedPath = '';
-  subs: any;
+  sub: any;
 
   constructor(public router: Router, public menuCtrl: MenuController) {
     this.pages = [

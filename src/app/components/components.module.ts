@@ -10,6 +10,6 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   imports: [IonicModule,CommonModule,RouterModule],
   declarations: [HeaderComponent, SideNavComponent],
-  exports: [HeaderComponent, SideNavComponent]
+  exports: [HeaderComponent, SideNavComponent,]
 })
 export class ComponentsModule{}
