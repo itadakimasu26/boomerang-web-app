@@ -9,7 +9,7 @@ import { MenuController } from '@ionic/angular';
 })
 export class AppComponent {
   constructor(
-    public router: Router, public menuCtrl: MenuController
+    public router: Router, public menuCtrl: MenuController,
   ) {
 
   }

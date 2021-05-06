@@ -60,11 +60,12 @@ ion-grid ion-row{
 
 #content{
   height: 100vh;
-
+  flex:1;
 }
 
 #menu{
   width: 20%;
+  flex:1;
 }
 
 #wan{

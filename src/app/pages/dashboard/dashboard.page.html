@@ -6,36 +6,44 @@
         <app-side-nav></app-side-nav>
       </ion-col>
       <ion-col id="content" size="10.5">
-        <ion-row >
+        <ion-row>
           <ion-col>
             <ion-row class="white" id="wan">
               <ion-col>
-                <ion-row >
-                  <ion-col >
+                <ion-row>
+                  <ion-col>
                     <ion-item size-xs="1" class="transpa" lines="none">
-                      <ion-label style="font-size: x-large;">Data Viewer</ion-label>
+                      <ion-label style="font-size: x-large"
+                        >Data Viewerr</ion-label
+                      >
                     </ion-item>
                   </ion-col>
-                  <ion-col >
-                    <ion-item  size-xs="2" class="transpa" lines="none">
+                  <ion-col>
+                    <ion-item size-xs="2" class="transpa" lines="none">
                       <ion-label class="ion-margin">From</ion-label>
                       <ion-input type="date"></ion-input>
                     </ion-item>
                   </ion-col>
                   <ion-col>
-                    <ion-item size-xs="2" class="transpa" lines="none ion-margin-left">
+                    <ion-item
+                      size-xs="2"
+                      class="transpa"
+                      lines="none ion-margin-left"
+                    >
                       <ion-label class="ion-margin">To</ion-label>
                       <ion-input type="date"></ion-input>
                     </ion-item>
                   </ion-col>
                   <ion-col>
                     <ion-item size-xs="2" class="transpa" lines="none">
-                      <ion-label style="font-size: x-large;">Bulk Orders</ion-label>
+                      <ion-label style="font-size: x-large"
+                        >Bulk Orders</ion-label
+                      >
                       <ion-select placeholder="Bulk Order ID">
-                        <ion-select-option value=1>1</ion-select-option>
-                        <ion-select-option value=2>2</ion-select-option>
-                        <ion-select-option value=3>3</ion-select-option>
-                        <ion-select-option value=4>4</ion-select-option>
+                        <ion-select-option value="1">1</ion-select-option>
+                        <ion-select-option value="2">2</ion-select-option>
+                        <ion-select-option value="3">3</ion-select-option>
+                        <ion-select-option value="4">4</ion-select-option>
                       </ion-select>
                     </ion-item>
                   </ion-col>
@@ -45,7 +53,9 @@
                     <ion-label>
                       <b>Parcel</b>
                     </ion-label>
-                    <ion-label style="--margin-top:100px;"><b>0,000</b></ion-label>
+                    <ion-label style="--margin-top: 100px"
+                      ><b>0,000</b></ion-label
+                    >
                   </ion-col>
                   <ion-col class="boxes">
                     <ion-label>
@@ -76,11 +86,53 @@
             </ion-row>
             <ion-row class="transpa" id="tu">
               <ion-col class="white second-first">
+                <ion-row>
+                  <ion-col>
+                    <ion-item lines="none">
+                      <ion-label>
+                        <b>Bulk Orders</b>
+                      </ion-label>
+                    </ion-item>
+                  </ion-col>
+                  <ion-col>
+                    <ion-item size-xs="2" class="transpa" lines="none">
+                      <ion-select placeholder="Bulk Order ID">
+                        <ion-select-option value="1">1</ion-select-option>
+                        <ion-select-option value="2">2</ion-select-option>
+                        <ion-select-option value="3">3</ion-select-option>
+                        <ion-select-option value="4">4</ion-select-option>
+                      </ion-select>
+                    </ion-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    <ion-item lines="none">
+                      <ion-label>
+                        Pick-Up
+                      </ion-label>
+                    </ion-item>
+                  </ion-col>
+                  <ion-col>
+                    <ion-item lines="none">
+                      <ion-input>
 
-              </ion-col>
-              <ion-col class="white second-second">
+                      </ion-input>
+                    </ion-item>
+                  </ion-col>
+                  <ion-col>
+                    <ion-item lines="none">
+                      <ion-label>
+                        /
+                      </ion-label>
+                    </ion-item>
+                  </ion-col>
+                  <ion-col>
 
+                  </ion-col>
+                </ion-row>
               </ion-col>
+              <ion-col class="white second-second"> </ion-col>
             </ion-row>
           </ion-col>
         </ion-row>
